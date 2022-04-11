@@ -1,0 +1,80 @@
+.header{
+  display: flex;
+  row-gap: 2rem;
+  flex-direction: column;
+  margin: 4.7rem 0 2rem 0;
+}
+
+.logoAndTitle{
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.logo{
+  width: 31rem;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 120%;
+  background: linear-gradient(94.43deg, #8C54FB -18.98%, #CE4F51 113.48%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /* background-clip: text; */
+}
+
+.header__title{
+font-weight: 400;
+font-size: 2rem;
+color:var(--mainFontColor);
+}
+
+.header__content{
+  display: flex;
+  column-gap: 1rem;
+}
+
+.header__content--input{
+  background-color: var(--inputBG);
+  height: 3.25rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  padding: 0rem 1.5rem;
+  border: none;
+  font-size: 1.5rem;
+  color: #5F4398;
+  
+}
+.header__content--input::placeholder{
+  font-size: 1.5rem;
+  color: #4D4A4F;
+  opacity: 0.5;
+}
+.header__content--input:focus{
+  outline: none;
+  border-bottom: 3px solid #8C54FB ;
+}
+
+.header__content--btn{
+  width: 11.5rem;
+  height: 3.25rem;
+  border-radius: 0.5rem;
+  background-color: #8C54FB;
+  border: none;
+  color: var(--mainFontColor) ;
+  font-family: var(--mainFont);
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: ease-in-out 0.1s;
+}
+.header__content--btn:hover{
+  font-family: var(--mainFont);
+  background-color: #5F4398;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+
+
+
+
+

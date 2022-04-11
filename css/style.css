@@ -1,0 +1,31 @@
+:root{
+  --bg: #232324;
+  --listBG:#4D4A4F;
+  --inputBG: #F2F2F3;
+
+  
+
+  --btnDefault:#8C54FB;
+  --btnHover:#5F4398;
+
+  --checkBoxDefault: #F2F2F3;
+  --checkBoxHover:#8C54FB;
+  --checkBoxSelected:#8C54FB;
+  --checkBoxSelectedHover:#5F4398;
+
+  --deleteBtnDefault:#232324;
+  --deleteBtnHover: #F2F2F3;
+
+  
+  --mainFont:'Roboto', sans-serif;
+  --mainFontColor:#F2F2F3;
+
+}
+body{
+  margin: 0 18%;
+  background: var(--bg);
+  font-family: var(--mainFont);
+}
+.container{
+  display: flex;
+}

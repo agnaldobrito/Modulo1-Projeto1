@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projeto 1</title>
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <section class="logoAndTitle">
+          <h1 class="logo">Shopping List</h1>
+          <h2 class="header__title">Faça sua lista de compras</h2>
+        </section>
+        <section class="header__content">
+          <input
+            class="header__content--input"
+            type="text"
+            placeholder="Digite o nome do item aqui"
+          />
+          <button class="header__content--btn">Inserir</button>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="content container">
+        <section class="list container">
+          <h2 class="list__title">Lista de Compras</h2>
+          <ul></ul>
+        </section>
+
+        <section class="total container">
+          <h2 class="total__title">Total das Compras</h2>
+          <div class="total__price" value="0">R$ 0,00</div>
+        </section>
+      </div>
+
+      <div class="popUp container hidden">
+        <h3 class="popUp__title"></h3>
+        <input
+          class="popUp__input"
+          type="number"
+          placeholder="Digite o preço do item"
+        />
+        <button class="popUp__btn">Adicionar ao Total</button>
+      </div>
+    </main>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
