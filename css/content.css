@@ -13,9 +13,12 @@
 
 .list__title, .total__title{
   color: var(--mainFontColor);
-  margin: 1.5rem;
+  margin: 1.5rem 1.5rem 2.5rem 1.5rem;
   font-size: 1.5rem;
   font-weight: 400;
+}
+.list__title{
+  text-align: center;
 }
 ul{
   display: flex;
@@ -27,7 +30,7 @@ ul{
 .list__item{
   display: flex;
   width: 90%;
-  column-gap: 1rem;
+  column-gap: 2rem;
   
   align-items: center;
 }
@@ -42,22 +45,18 @@ ul{
 }
 .list__item.checked .checkBtn{
   background: #8C54FB url(../images/checkedIcon.svg) no-repeat center  ;
-  
+  border: 2px solid #8C54FB;
 }
 .list__item.checked .checkBtn:hover{
   background-color: #5F4398;
-  border: 2px solid #5F4398;
+  
 }
-.list__item.checked .checkBtn:focus{
-  outline: none;
-}
-
 
 .checkBtn{
   border: 1px solid #F2F2F3;
   border-radius: 0.3rem;
-  height: 2.1rem;
-  width: 2.1rem;
+  height: 2rem;
+  width: 2rem;
   background-color: #4D4A4F;
   cursor: pointer;
   appearance: none;
@@ -67,6 +66,7 @@ ul{
 .checkBtn:hover{
   border: 2px solid #8C54FB;
 }
+
 
 .removeItem{
   cursor: pointer;
@@ -80,12 +80,12 @@ ul{
   width: 1.5rem;
   padding-bottom: 0.15rem;
   color: var(--mainFontColor);
-  border: 1px solid #CE4F51;
+  border: 1px solid #9a969e;
   transition: ease-in-out 0.1s;
   
 }
 .removeItem:hover{
-
+  border: 1px solid #CE4F51;
   background-color: #CE4F51;
 }
 
@@ -107,6 +107,11 @@ ul{
 
 .popUp.hidden{
   display: none;
+}
+
+.popUp{
+  display: flex;
+  position: fixed;
 }
 
 
