@@ -68,12 +68,18 @@ function createItem(inputValue) {
 
   //////////botao removeItem
   removeItemBtn.addEventListener('click', e => {
+    const cart = e.target.parentElement.querySelector('.item__name');
+    const statement = document.querySelector('.statement__item');
+    const statementName = document.querySelector('.statement__item--name');
     dataArray = dataArray.filter(item => {
-      return (
-        e.target.parentElement.querySelector('.item__name').innerText !==
-        item.itemName
-      );
+      return cart.innerText && statementName.innerText !== item.itemName;
     });
+    if (
+      e.target.parentElement.querySelector('.item__name').innerText ===
+      document.querySelector('.statement__item--name').innerText
+    ) {
+      statement.remove();
+    }
 
     e.target.parentElement.remove();
     calculateTotal();
@@ -148,19 +154,28 @@ function createStatement(name, price) {
 
 async function fetchApi(name) {
   const nameTrim = name.trim();
-  const response = await fetch(
-    `https://api.giphy.com/v1/gifs/search?api_key=dpPu1kIHwa3fxoQiH9lzTfmUkMgEjtuS&limit=1&q=${nameTrim}`
-  );
-  const responseJson = await response.json();
-  console.log(responseJson.data);
-  console.log('META', responseJson.meta);
-  const fig = document.createElement('figure');
-  const gif = document.createElement('img');
-  const fc = document.createElement('figcaption');
-  gif.src = responseJson.data[0].images.downsized.url;
-  gif.alt = responseJson.data[0].title;
-  fc.textContent = responseJson.data[0].title;
-  document.body.appendChild(fig);
-  fig.appendChild(gif);
-  fig.appendChild(fc);
+  try {
+    const response = await fetch(
+      `https://api.giphy.com/v1/gifs/search?api_key=dpPu1kIHwa3fxoQiH9lzTfmUkMgEjtuS&limit=1&q=${nameTrim}`
+    );
+    const responseJson = await response.json();
+    console.log(responseJson.data);
+    console.log('NAME', responseJson.data[0].title);
+    console.log('META', responseJson.meta);
+    if (responseJson.meta.msg === 'OK') {
+      const fig = document.createElement('figure');
+      const gif = document.createElement('img');
+      const fc = document.createElement('figcaption');
+      gif.src = responseJson.data[0].images.downsized.url;
+      gif.alt = responseJson.data[0].title;
+      fc.textContent = responseJson.data[0].title;
+      document.body.appendChild(fig);
+      fig.appendChild(gif);
+      fig.appendChild(fc);
+    } else {
+      throw new Error('algo deu errado');
+    }
+  } catch (error) {
+    console.log(error.message);
+  }
 }
