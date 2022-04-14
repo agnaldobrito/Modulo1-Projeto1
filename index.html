@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Projeto 1</title>
+    <title>Shopping List</title>
   </head>
   <body>
     <header>
@@ -41,15 +41,22 @@
           <ul class="list__box"></ul>
         </section>
 
-        <section class="total container">
-          <h2 class="statement__title">Extrato da Compra</h2>
+        <section class="statement container">
+          <div class="statement__title">
+            <h2 class="statement__title--name">Extrato da Compra</h2>
+            <button class="statement__title--btn">x</button>
+          </div>
           <ul class="statement__box"></ul>
-          <h2 class="total__title">Total</h2>
-          <div class="total__price">R$ 0,00</div>
+          <div class="total">
+            <h2 class="total__title">Total</h2>
+            <div class="total__price">R$ 0,00</div>
+          </div>
         </section>
       </div>
     </main>
-    <!-- <script src="./js/main.js" type="module"></script> -->
+    <footer>
+      <img src="./images/DevInHouse-logo.png" alt="logo da DevInHouse" />
+    </footer>
     <script src="./javascript/main.js" type="module"></script>
   </body>
 </html>
