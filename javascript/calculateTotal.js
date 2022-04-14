@@ -1,5 +1,5 @@
 export function calculateTotal(dataArray) {
-  const totalDiv = document.querySelector('.total__price');
+  const totalPrice = document.querySelector('.total__price');
   const objArray = dataArray.reduce((prev, curr) => {
     return prev + parseFloat(curr.itemPrice);
   }, 0);
@@ -9,5 +9,6 @@ export function calculateTotal(dataArray) {
     currency: 'BRL'
   });
   console.log(dataArray);
-  return (totalDiv.innerText = total);
+
+  return (totalPrice.innerText = total);
 }
