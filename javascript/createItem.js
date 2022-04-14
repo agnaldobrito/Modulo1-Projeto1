@@ -41,7 +41,7 @@ export function createItem(inputValue, dataArray) {
     const statement = document.querySelector('.statement__item');
     const statementName = document.querySelector('.statement__item--name');
     dataArray = dataArray.filter(item => {
-      return cart.innerText && statementName.innerText !== item.itemName;
+      return cart.innerText || statementName.innerText !== item.itemName;
     });
     if (
       e.target.parentElement.querySelector('.item__name').innerText ===
@@ -54,19 +54,33 @@ export function createItem(inputValue, dataArray) {
     calculateTotal(dataArray);
   });
 
+  //criação do popup
+  const mainTag = document.querySelector('main');
   const popUpContainer = document.createElement('div');
-  popUpContainer.classList.add('popUp', 'hidden');
-
-  itemName.parentNode.insertBefore(popUpContainer, itemName.nextSibling);
-
+  const popUpDiv = document.createElement('div');
+  const popUpElements = document.createElement('div');
+  const popUpName = document.createElement('span');
   const popUpInput = document.createElement('input');
-  popUpInput.classList.add('popUp__input');
-  popUpInput.type = 'number';
   const popUpBtn = document.createElement('button');
+
+  popUpContainer.classList.add('popUp', 'hidden');
+  popUpDiv.classList.add('popUpContainer');
+  popUpElements.classList.add('popUpElements');
+  popUpName.classList.add('popUp__name');
+  popUpInput.classList.add('popUp__input');
   popUpBtn.classList.add('popUp__button');
-  popUpBtn.innerText = 'Adicionar ao Total';
-  popUpContainer.append(popUpInput);
-  popUpContainer.append(popUpBtn);
+
+  popUpName.innerText = 'Digite o valor do item';
+  popUpInput.type = 'number';
+  popUpInput.setAttribute('placeholder', 'R$ 0,00');
+  popUpBtn.innerText = '+ Total';
+
+  mainTag.appendChild(popUpContainer);
+  popUpContainer.append(popUpDiv);
+  popUpDiv.append(popUpName);
+  popUpDiv.append(popUpElements);
+  popUpElements.append(popUpInput);
+  popUpElements.append(popUpBtn);
 
   //////////botao popUpBtn captura o valor do item
   popUpBtn.addEventListener('click', () => {
