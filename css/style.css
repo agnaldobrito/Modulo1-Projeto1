@@ -1,6 +1,6 @@
 :root{
   --bg: #232324;
-  --listBG:#4D4A4F;
+  --contentBG:#3e3c3f;
   --inputBG: #F2F2F3;
 
   
@@ -22,9 +22,12 @@
 
 }
 body{
-  margin: 0 18%;
+  position: absolute;
+  margin: 0 auto;
   background: var(--bg);
   font-family: var(--mainFont);
+  left: 50%;
+  transform: translateX(-50%);
 }
 .container{
   display: flex;
