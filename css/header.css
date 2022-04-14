@@ -3,6 +3,7 @@
   row-gap: 2rem;
   flex-direction: column;
   margin: 4.7rem 0 2rem 0;
+  width: 100%;
 }
 
 .logoAndTitle{
@@ -37,6 +38,7 @@ color:var(--mainFontColor);
   background-color: var(--inputBG);
   height: 3.25rem;
   width: 30rem;
+  
   border-radius: 0.5rem;
   padding: 0rem 1.5rem;
   border: none;
@@ -55,7 +57,8 @@ color:var(--mainFontColor);
 }
 
 .header__content--btn{
-  width: 11.5rem;
+  width: 11.37rem;
+  
   height: 3.25rem;
   border-radius: 0.5rem;
   background-color: #8C54FB;
