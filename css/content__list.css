@@ -1,0 +1,102 @@
+.content{
+  column-gap: 2rem;
+  
+}
+.list{
+  flex-direction: column;
+  width: 42.3rem;
+  
+  padding: 0 2rem 2rem 2rem;
+  background-color: var(--contentBG);
+  color: var(--mainFontColor);
+  border-radius: 0.5rem;
+}
+
+.list__title{
+  color: var(--mainFontColor);
+  padding: 1.5rem 1.5rem 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(140,84,251,1) 0%, rgba(206,79,81,1) 100%);
+  border-image-slice: 1;
+  margin-bottom: 2rem;
+}
+
+.list__box{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.list__item{
+  display: flex;
+  width: 90%;
+  column-gap: 2rem;
+  align-items: center;
+}
+.item__name{
+  font-size: 1.5rem;
+  font-family: var(--mainFont);
+  font-weight: 300;
+}
+.list__item.checked .item__name{
+  color: #a8a8aa;
+  text-decoration: line-through 1px #ffffff;
+}
+.list__item.checked .checkBtn{
+  background: #8C54FB url(../images/checkedIcon.svg) no-repeat center  ;
+  border: 2px solid #8C54FB;
+}
+.list__item.checked .checkBtn:hover{
+  background-color: #5F4398;
+  
+}
+
+.checkBtn{
+  border: 1px solid #F2F2F3;
+  border-radius: 0.3rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: #4D4A4F;
+  cursor: pointer;
+  appearance: none;
+  transition: ease-in-out 0.1s;
+  
+}
+.checkBtn:hover{
+  border: 2px solid #8C54FB;
+}
+
+
+.removeItem{
+  cursor: pointer;
+  background: #4D4A4F;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 100;
+  border-radius: 100%;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding-bottom: 0.15rem;
+  color: var(--mainFontColor);
+  border: 1px solid #9a969e;
+  transition: ease-in-out 0.1s;
+  
+}
+.removeItem:hover{
+  border: 1px solid #CE4F51;
+  background-color: #CE4F51;
+}
+
+
+.hidden{
+  display: none;
+}
+
+
+
+
