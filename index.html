@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="stylesheet" href="./css/content__list.css" />
+    <link rel="stylesheet" href="./css/content__statement.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,25 +38,18 @@
       <div class="content container">
         <section class="list container">
           <h2 class="list__title">Lista de Compras</h2>
-          <ul></ul>
+          <ul class="list__box"></ul>
         </section>
 
         <section class="total container">
-          <h2 class="total__title">Total da Compra</h2>
+          <h2 class="statement__title">Extrato da Compra</h2>
+          <ul class="statement__box"></ul>
+          <h2 class="total__title">Total</h2>
           <div class="total__price">R$ 0,00</div>
         </section>
       </div>
-
-      <div class="popUp container hidden">
-        <h3 class="popUp__title"></h3>
-        <input
-          class="popUp__input"
-          type="number"
-          placeholder="Digite o preço do item"
-        />
-        <button class="popUp__btn">+ Adicionar ao Total</button>
-      </div>
     </main>
-    <script src="./js/main.js" type="module"></script>
+    <!-- <script src="./js/main.js" type="module"></script> -->
+    <script src="./javascript/main2.js"></script>
   </body>
 </html>
