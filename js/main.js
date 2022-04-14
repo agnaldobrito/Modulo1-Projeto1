@@ -1,5 +1,7 @@
 import { checkItem } from './checkItem.js';
 import { itemRemove } from './itemRemove.js';
+
+const storedData = [];
 const inputItem = document.querySelector('.header__content--input');
 const addBtn = document.querySelector('.header__content--btn');
 //função irá criar itens dentro do ul
