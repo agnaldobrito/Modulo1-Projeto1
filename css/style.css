@@ -9,7 +9,7 @@
   --btnHover:#5F4398;
 
   --checkBoxDefault: #F2F2F3;
-  --checkBoxHover:#8C54FB;
+  --checkBoxHover:#;
   --checkBoxSelected:#8C54FB;
   --checkBoxSelectedHover:#5F4398;
 
@@ -22,13 +22,51 @@
 
 }
 body{
-  position: absolute;
-  margin: 0 auto;
+  margin: 0 20%;
   background: var(--bg);
   font-family: var(--mainFont);
-  left: 50%;
-  transform: translateX(-50%);
+}
+footer{
+  display: flex;
+  justify-content: center;
+  margin: 4rem  0 ;
 }
 .container{
   display: flex;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3e3c3f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(146, 146, 146);
+  border-radius: 0.1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5F4398;
+}
+.redLine{
+  border-bottom: 3px solid red !important; 
+}
+
+figure{
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color: #3e3c3f;
+  border-radius: 0.75rem;
+  z-index: 10;
+  max-width: 80%;
+  box-shadow: 0px 0px 50px 43px rgba(0,0,0,0.70);
 }
