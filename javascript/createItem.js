@@ -41,14 +41,8 @@ export function createItem(inputValue, dataArray) {
     const statement = document.querySelector('.statement__item');
     const statementName = document.querySelector('.statement__item--name');
     dataArray = dataArray.filter(item => {
-      return cart.innerText || statementName.innerText !== item.itemName;
+      return cart.innerText !== item.itemName;
     });
-    if (
-      e.target.parentElement.querySelector('.item__name').innerText ===
-      document.querySelector('.statement__item--name').innerText
-    ) {
-      statement.remove();
-    }
 
     e.target.parentElement.remove();
     calculateTotal(dataArray);
