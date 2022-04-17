@@ -20,6 +20,13 @@
   </li>
 </ol>
 
+<h3< Exemplo de Aplicação </h3>
+<img src="images/Screenshot_1.jpg">
+<img src="images/Screenshot_2.jpg">
+<img src="images/Screenshot_3.jpg">
+  
+
+
 <h3> Plano do Projeto </h3>
 <p>Ao construir uma aplicação de Lista de compras salvando os dados no LocalStorage do navegador, o aluno estará colocando em prática os aprendizados em:</p>
 <ul><li>HTML: principais tags como head, meta, title, body, div, h1, form, input, button, ul, li. Atributos de tags como class, id, type. Inclusão de arquivos de estilos (css) e de script (js) na página.</li>
