@@ -1,6 +1,6 @@
 <h1> DevInHouse - Módulo 1 - Projeto 1</h1>
 
-<h2> Módulo1 - Projeto 1 - Criação de uma aplicação web para controle e cálculo de uma lista de compras</h2>
+<h2> Módulo1 - Projeto 1: Criação de uma aplicação web para controle e cálculo de uma lista de compras</h2>
 
 <h3> REQUISITOS DA APLICAÇÃO</h3>
 
