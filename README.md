@@ -21,8 +21,8 @@
 </ol>
 
 <h3> Plano do Projeto </h3>
-<ul>Ao construir uma aplicação de Lista de compras salvando os dados no LocalStorage do navegador, o aluno estará colocando em prática os aprendizados em:
-    <li>HTML: principais tags como head, meta, title, body, div, h1, form, input, button, ul, li. Atributos de tags como class, id, type. Inclusão de arquivos de estilos (css) e de script (js) na página.</li>
+<p>Ao construir uma aplicação de Lista de compras salvando os dados no LocalStorage do navegador, o aluno estará colocando em prática os aprendizados em:</p>
+<ul><li>HTML: principais tags como head, meta, title, body, div, h1, form, input, button, ul, li. Atributos de tags como class, id, type. Inclusão de arquivos de estilos (css) e de script (js) na página.</li>
     <li>CSS: estilizar a página, os botões, inputs, alterar atributos dos elementos da tela de acordo com a interação do usuário para uma melhor experiência do usuário (UX).</li>
     <li>Javascript: variáveis, arrays, funções, manipulação do DOM (eventos, elementos e seus atributos), manipular objetos (JSON), utilizar o localStorage.</li>
   
