@@ -1,4 +1,4 @@
-<h1> DevInHouse - Projeto 1</h1>
+<h1> DevInHouse - Módulo 1 - Projeto 1</h1>
 
 <h2> Projeto 1 - Criação de uma aplicação web para controle e cálculo de uma lista de compras</h2>
 
