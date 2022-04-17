@@ -20,7 +20,7 @@
   </li>
 </ol>
 
-<h3< Exemplo de Aplicação </h3>
+<h3> Exemplo de Aplicação </h3>
 <img src="images/Screenshot_1.jpg">
 <img src="images/Screenshot_2.jpg">
 <img src="images/Screenshot_3.jpg">
